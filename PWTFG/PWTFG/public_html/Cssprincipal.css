@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-may-2018, 21:10:02
+    Author     : Oscar
+*/
+
+.divTotal{
+   
+        
+};
+.EncabezadoPrincipal{
+  
+  
+};
+.divizquierdoDelEncabezadoPrincipal{
+     
+    
+};
+.divDerechoDelEncabezadoPrincipal{
+
+    
+};  
+/*    <div class="divDerechoDelEncabezadoPrincipal"> 
+                   <h1 style="text-align: center;font-family: Roboto,Arial,sans-serif;">
+                    ¿Te gusta hacer deporte?
+                    <br>¿Crees poder ser el mejor en tu deporte?
+                    <br>¿O lo que te gusta es pasarlo bien con tus amigos?
+                    <br>Si es asi <a href="https://play.google.com/store">MEETING SPORT </a>es tu aplicacion
+                </h1>
+            </div> 
+                <div class="divizquierdoDelEncabezadoPrincipal">
+                    <a> en este div lo que ira es una imagen de la aplicacion
+                    </a>
+                    
+                </div>*/
+/* <div style="border-color: black;
+                            border-style: solid;
+                            float: left;">
+            <link rel="shortcut icon" type="image/x-icon" href="imagenes/124010.png" />
+           
+                </div>*/
