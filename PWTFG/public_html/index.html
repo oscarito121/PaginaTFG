@@ -10,65 +10,243 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="Cssprincipal.css" rel="stylesheet" type="text/css"/>
+      
+        <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 50vw;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
     </head>
     <body>
         <div class="divTotal" style="  width: 100%;
-                                        height: 300vw;
+                                        height: 100vw;
                                         background-color: #658A47;
                                         color: green">
             <a style="color: green">
                 rdtfckyulioj
             </a>
         
-            <div class="EncabezadoPrincipal" style="height: 50vw; 
+            <div class="EncabezadoPrincipal" style=" 
+                                                    width: 100%;
                                                     border-color: black;
                                                     border-style: solid;" >
                 
-                <a>aqui ponemos una imagen de fondo o en un lateral de la aplicacion o el logo</a>
-                <br>
-                
-                    <h3 style="text-align: center;font-family: Roboto,Arial,sans-serif;">
+                <a style="text-align:  center">
+                    aqui ponemos una imagen de fondo o en un lateral de la aplicacion o el logo</a>
+               
+               <!-- <div style="width: auto;
+                            height: 12vw;">
+                    <p  style="font-family: Roboto,Arial,sans-serif; text-align: center">-->  
                     ¿Te gusta hacer deporte?
                     <br>¿Crees poder ser el mejor en tu deporte?
                     <br>¿O lo que te gusta es pasarlo bien con tus amigos?
                     <br>Si es asi <a href="https://play.google.com/store">MEETING SPORT </a>es tu aplicacion
-                </h3>
-                
-                
-             
+                <!--</p>
+                </div> -->  
             </div> 
             <div class="encabezadoRedes" style="clear: both;
-                                                height: 10vw;
                                                 border-color: black;
                                                 border-style: solid;
                                                 ">
                 <a>en esta parte va un div con las redes donde seguiron e incluso en el cenro donde descargarla  </a>
                 <br>
-                <button style="border-radius: 1000px 1000px 1000px 1000px;
+                <div style="align-content: center;margin-left: 40%;margin-right: 25%">
+                    <a href="https://www.instagram.com/meeting_sport123/">
+                    <button  style="border-radius: 1000px 1000px 1000px 1000px;
                                -moz-border-radius: 1000px 1000px 1000px 1000px;
                                -webkit-border-radius: 1000px 1000px 1000px 1000px;
-                               border: 0px solid #000000;">
-                    <img style="width: 7vw;height: 7vw"  src="imagenes/Instagram_icon-icons.com_66804.png" alt=""/>
+                               border: 0px solid #000000;
+                               background-color: #658A47 " >
+                        <img style="width: 7vw;height: 7vw" 
+                             onmouseout="this.src='imagenes/Instagram_icon-icons.com_66804.png'"
+                            
+                             onmouseover="this.src='imagenes/1516920571instagram-png-logo-old.png'" 
+                             src="imagenes/Instagram_icon-icons.com_66804.png" alt=""/>
                   
                 </button>
-                 <button style="border-radius: 200px 200px 200px 200px;
+                </a>
+                <a>
+                    <button onclick=""  style="border-radius: 200px 200px 200px 200px;
                                -moz-border-radius: 200px 200px 200px 200px;
                                -webkit-border-radius: 200px 200px 200px 200px;
-                               border: 0px solid #000000;">
+                               border: 0px solid #000000;
+                               background-color: #658A47">
                      <img style="width: 7vw;height: 7vw"  src="imagenes/124010.png" alt=""/>
+                </button></a>
+                    <a href="https://twitter.com/meetingsport123">
+                      <button style="border-radius: 200px 200px 200px 200px;
+                               -moz-border-radius: 200px 200px 200px 200px;
+                               -webkit-border-radius: 200px 200px 200px 200px;
+                               border: 0px solid #000000;
+                               background-color: #658A47">
+                     <img style="width: 7vw;height: 7vw"  src="imagenes/23681.png" alt=""/>
                 </button>
+                    </a>
+                    </div>
             </div>
-            <div class="encabezado1" style="clear: both">
-                <a>en esta parte va un enlace a la pagina explicativa de como usar la app  </a>
-            </div>
-             <div class="encabezado2" style="clear: both">
+             <a href="PaginaExplicativa.html">
+                <div class="MANUAL EXPLICATIVO" style="clear: both;
+                                                border-color: black;
+                                                border-style: solid;" >
+                    <h4 >en esta parte va un enlace a la pagina explicativa de como usar la app  </h4>
+                <h2 style="text-align: center">¿TE HAS DESCARGADO NUESTRA APLICACION Y NO SABES COMO FUNCIONA?
+                    <br>
+                    No te preocupes!!!
+                    <br>
+                    te dejamso un manualr aqui mismo explicandotelo
+                </h2>
+                </div>
+                    
+            </a> 
+             <div class="Carrusel" style="
+                                             clear: both;
+                                             border: black;
+                                             border-style: solid">
                 <a>en esta parte va un carrusel con nosotros que hemos hecho la pagina  </a>
+                <div class="slideshow-container">
+                    
+                    <a href="prueba.html" style="text-align: center">
+<div class="mySlides fade" style="height:33vw;width: 100%">
+ ¿Como se nos osucrrio este proyecto?
+  <img style="width:100%;height:33vw" src="imagenes/business-plan-tools-startups-1.jpg" alt=""/>
+  
+
+  
+  
+</div>
+                        </a>
+                   
+                    <a href="QuienesSomos.html" style="">
+<div class="mySlides fade" style="height:33vw;width: 100%">
+  
+  <img style="width:100%;height:33vw" src="imagenes/35524desarrollo-de-proyectos2.jpg" alt=""/>
+                            ¿Quienes somos?
+</div>
+                        </a>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
             </div>
-             <div class="encabezado3" style="clear: both">
-                <a>en esta parte va un enlaca para pone run correo y mandar un descuento  </a>
+             <div class="CorreoDescuentos" style="clear: both">
+                <a>en esta parte va un enlaca para poner un correo y mandar un descuento como lo que nos enseño nico 
+                    que aunque no le demos funcionalidad se  puede poner que si s ele +
+                mande el correo al usuario</a>
             </div>
-             <div class="encabezadoFinal" style="clear: both">
+             <div class="encabezadoFinal" style="clear: both;
+                                                 background-color: black;
+                                                 height: ">
                 <a>en esta parte va con donde encontrarnos como ponerse en contacto con osotros o un correo para incidencias  </a>
             </div>
             
