@@ -10,6 +10,7 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Cssprincipal.css" rel="stylesheet" type="text/css"/>
       
         <style>
 * {box-sizing: border-box}
@@ -94,35 +95,69 @@ img {vertical-align: middle;}
 </style>
     </head>
     <body>
+         
         <div class="divTotal" style="  width: 100%;
                                         height: 100vw;
-                                        background-color: #658A47;
+                                        background-color: white;
                                         color: green">
-            <a style="color: green">
-                rdtfckyulioj
-            </a>
+            <div>
+           <header style=" margin: 0;
+                        font-family: sans-serif;
+                        width: 100%;
+                        background-color: #cccccc;
+                        color: black
+                        ">
+            <input type="checkbox" id="btn-menu" style=" display: none;
+                                       ">
+            <label for="btn-menu" style="
+                                         width: 30px;
+                                         height: 30px;
+                                         padding: 10px;
+                                         border-right: 1px solid wheat;">
+                <img style="height:200% ;
+                            max-height: 4000px;
+                            width: 200%;
+                            max-width:4000px " 
+                    src="imagenes/icon-mobile.png" alt=""/>
+            </label>
+          <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="" style="color: black;"> PAGINA DE DESCARGA</a>
+                    </li>
+                    <li>
+                        <a href="" style="color: black;"> MANUAL DE DESCARGA</a>
+                    </li>
+                    <li>
+                        <a href="" style="color: black;"> PAGINA DE DESCARGA</a>
+                    </li>
+                    <li>
+                        <a href="" style="color: black;"> ¿COMO SE NOS OCURRIO LA IDEA?</a>
+                    </li>
+                    <li>
+                        <a href="" style="color: black;">¿QUIENES SOMOS?</a>
+                    </li>
+                </ul>
+            </nav>
+           </header>
+                </div>
         
             <div class="EncabezadoPrincipal" style=" 
                                                     width: 100%;
                                                     border-color: black;
-                                                    border-style: solid;" >
+                                                    border-style: solid;
+                                                    clear: both" >
                 
-                <a style="text-align:  center">
-                    aqui ponemos una imagen de fondo o en un lateral de la aplicacion o el logo</a>
-               
-               <!-- <div style="width: auto;
-                            height: 12vw;">
-                    <p  style="font-family: Roboto,Arial,sans-serif; text-align: center">-->  
-                    ¿Te gusta hacer deporte?
-                    <br>¿Crees poder ser el mejor en tu deporte?
-                    <br>¿O lo que te gusta es pasarlo bien con tus amigos?
-                    <br>Si es asi <a href="https://play.google.com/store">MEETING SPORT </a>es tu aplicacion
-                <!--</p>
-                </div> -->  
+                <img style="height: 100%; 
+                            max-height:600px;
+                             width: 100%" 
+                    src="imagenes/PORTADA/Nike-Basketball-Quotes-HD-Wallpaper.jpg" alt=""/>
+                
             </div> 
             <div class="encabezadoRedes" style="clear: both;
                                                 border-color: black;
                                                 border-style: solid;
+                                                background-color: #cccccc;
                                                 ">
                 <a>en esta parte va un div con las redes donde seguiron e incluso en el cenro donde descargarla  </a>
                 <br>
@@ -132,7 +167,7 @@ img {vertical-align: middle;}
                                -moz-border-radius: 1000px 1000px 1000px 1000px;
                                -webkit-border-radius: 1000px 1000px 1000px 1000px;
                                border: 0px solid #000000;
-                               background-color: #658A47 " >
+                               background-color: #f2f2f2 " >
                         <img style="width: 7vw;height: 7vw" 
                              onmouseout="this.src='imagenes/Instagram_icon-icons.com_66804.png'"
                             
@@ -146,7 +181,7 @@ img {vertical-align: middle;}
                                -moz-border-radius: 200px 200px 200px 200px;
                                -webkit-border-radius: 200px 200px 200px 200px;
                                border: 0px solid #000000;
-                               background-color: #658A47">
+                               background-color: #f2f2f2">
                      <img style="width: 7vw;height: 7vw"  src="imagenes/124010.png" alt=""/>
                 </button></a>
                     <a href="https://twitter.com/meetingsport123">
@@ -154,7 +189,7 @@ img {vertical-align: middle;}
                                -moz-border-radius: 200px 200px 200px 200px;
                                -webkit-border-radius: 200px 200px 200px 200px;
                                border: 0px solid #000000;
-                               background-color: #658A47">
+                               background-color: #f2f2f2">
                      <img style="width: 7vw;height: 7vw"  src="imagenes/23681.png" alt=""/>
                 </button>
                     </a>
@@ -163,7 +198,8 @@ img {vertical-align: middle;}
              <a href="PaginaExplicativa.html">
                 <div class="MANUAL EXPLICATIVO" style="clear: both;
                                                 border-color: black;
-                                                border-style: solid;" >
+                                                border-style: solid;
+                                                background-color: white" >
                     <h4 >en esta parte va un enlace a la pagina explicativa de como usar la app  </h4>
                 <h2 style="text-align: center">¿TE HAS DESCARGADO NUESTRA APLICACION Y NO SABES COMO FUNCIONA?
                     <br>
@@ -181,7 +217,7 @@ img {vertical-align: middle;}
                 <a>en esta parte va un carrusel con nosotros que hemos hecho la pagina  </a>
                 <div class="slideshow-container">
                     
-                    <a href="prueba.html" style="text-align: center">
+                    <a href="ComoSeNosOcurrioLaIdea.html" style="text-align: center">
 <div class="mySlides fade" style="height:33vw;width: 100%">
  ¿Como se nos osucrrio este proyecto?
   <img style="width:100%;height:33vw" src="imagenes/business-plan-tools-startups-1.jpg" alt=""/>
@@ -239,7 +275,8 @@ function showSlides(n) {
 }
 </script>
             </div>
-             <div class="CorreoDescuentos" style="clear: both">
+             <div class="CorreoDescuentos" style="clear: both;
+                                            background-color: #cccccc">
                 <a>en esta parte va un enlaca para poner un correo y mandar un descuento como lo que nos enseño nico 
                     que aunque no le demos funcionalidad se  puede poner que si s ele +
                 mande el correo al usuario</a>
